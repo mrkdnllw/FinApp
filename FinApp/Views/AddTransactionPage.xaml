@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinApp.AddTransactionPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Add Transaction" />
+            <Entry x:Name="amount" 
+                   Text="{Binding Amount}"/>
+
+            <Picker Title="Select transaction type" 
+                    
+                    ItemsSource="{Binding TransactionTypes}" 
+                    ItemDisplayBinding="{Binding Name}"
+                    SelectedItem="{Binding SelectedTransactionType}" />
+
+            <Button Text="Submit Transaction"
+                    Clicked="SubmitTransaction" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

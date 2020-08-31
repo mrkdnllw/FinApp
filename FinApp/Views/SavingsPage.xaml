@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinApp.SavingsPage"
+             Title="Savings">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Savings Page"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text=""/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
